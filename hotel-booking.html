@@ -1,10 +1,827 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="pixel-drop">
+    <meta name="description" content="Home- Relax Travel BD">
+    <!-- ======== Page title ============ -->
+    <title>Hotel Booking - Relax Travel BD</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Datepickerboot.css >>-->
+    <link rel="stylesheet" href="assets/css/datepickerboot.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
+<!-- Preloader Start -->
+<div id="preloader" class="preloader">
+    <div class="animation-preloader">
+        <div class="spinner">
+        </div>
+        <div class="txt-loading">
+                    <span data-text-preloader="R" class="letters-loading">
+                        R
+                    </span>
+            <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+            <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+            <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+            <span data-text-preloader="X" class="letters-loading">
+                        X
+                    </span>
+        </div>
+        <p class="text-center">Loading</p>
+    </div>
+    <div class="loader">
+        <div class="row">
+            <div class="col-3 loader-section section-left">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+                <div class="bg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back To Top Start -->
+<button id="back-top" class="back-to-top">
+    <i class="fa-regular fa-arrow-up"></i>
+</button>
+
+<!--<< Mouse Cursor Start >>-->
+<div class="mouse-cursor cursor-outer"></div>
+<div class="mouse-cursor cursor-inner"></div>
+
+<!-- Offcanvas Area Start -->
+<div class="fix-area">
+    <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+                <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo/black-logo.svg" alt="logo-img">
+                        </a>
+                    </div>
+                    <div class="offcanvas__close">
+                        <button>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <p class="text d-none d-xl-block">
+                    Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                </p>
+                <div class="mobile-menu fix mb-3"></div>
+                <div class="offcanvas__contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li class="d-flex align-items-center">
+                            <div class="offcanvas__contact-icon">
+                                <i class="fal fa-map-marker-alt"></i>
+                            </div>
+                            <div class="offcanvas__contact-text">
+                                <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div class="offcanvas__contact-icon mr-15">
+                                <i class="fal fa-envelope"></i>
+                            </div>
+                            <div class="offcanvas__contact-text">
+                                <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div class="offcanvas__contact-icon mr-15">
+                                <i class="fal fa-clock"></i>
+                            </div>
+                            <div class="offcanvas__contact-text">
+                                <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div class="offcanvas__contact-icon mr-15">
+                                <i class="far fa-phone"></i>
+                            </div>
+                            <div class="offcanvas__contact-text">
+                                <a href="tel:+11002345909">+11002345909</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header-button mt-4">
+                        <a href="contact.html" class="theme-btn"> Request A Quote <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                    </div>
+                    <div class="social-icon d-flex align-items-center">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offcanvas__overlay"></div>
+
+<!-- Header top section start -->
+
+
+<!-- Header Section Start -->
+<header class="header-section-10">
+    <div class="header-top-section-new">
+        <div class="container-fluid">
+            <div class="header-top-wrapper-new">
+                <div class="social-icon d-flex align-items-center">
+                    <span>Follow Us</span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <ul class="top-right">
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:relaxtravelbd2023@gmail.com">relaxtravelbd2023@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        55/B, Noakhali Tower Level-13, Purana Paltan Dhaka-1000
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+88019357899105">+8801935-7899105</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="header-sticky" class="header-11">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/img/logo/white-logo.png" alt="logo-img">
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html">
+                                <img src="assets/img/logo/black-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="has-dropdown active menu-thumb">
+                                            <a href="index.html">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tickets.html">
+                                                Tickets
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="air-ticket.html">Air Ticket</a></li>
+                                                <li><a href="train-ticket.html">Train Ticket</a></li>
+                                                <li><a href="bus-and-ship-ticket.html">Bus & Ship Ticket</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="visa.html">
+                                                Visa
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="tourist-visa.html">Tourist Visa</a></li>
+                                                <li><a href="student-visa.html">Student Visa</a></li>
+                                                <li><a href="medical-visa.html">Medical Visa</a></li>
+                                                <li><a href="work-visa.html">Work Visa</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="booking.html">
+                                                Booking
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="hotel-booking.html">Hotel Booking</a></li>
+                                                <li><a href="tour-booking.html">Tour Booking</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="theme-btn"> Call Now  <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- breadcrumb-wrappe-Section Start -->
+<section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(assets/img/breadcrumb/breadcrumb.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="page-heading">
+                <h2>Hotel Booking</h2>
+                <ul class="breadcrumb-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li><i class="fa-solid fa-chevrons-right"></i></li>
+                    <li>Hotel Booking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Destination section Start -->
+<section class="new-destination-section fix section-padding">
+    <div class="container">
+        <div class="section-title-area">
+            <div class="section-title">
+                        <span class="sub-title wow fadeInUp">
+                            Our Destination
+                        </span>
+                <h2 class="wow fadeInUp wow" data-wow-delay=".5s">
+                    Our Top Location For <br> You Property
+                </h2>
+            </div>
+            <a href="destination.html" class="theme-btn">
+                Learn More <i class="fa-sharp fa-regular fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="new-destination-wrapper">
+            <div class="swiper new-destination-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="new-destination-items">
+                            <div class="thumb">
+                                <img src="assets/img/destination/new/01.jpg" alt="img">
+                                <div class="content">
+                                    <div class="title-text">
+                                        <h3><a href="destination-details.html">New Zealand</a></h3>
+                                        <p>Hotel 1</p>
+                                    </div>
+                                    <a href="destination-details.html" class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new-destination-items">
+                            <div class="thumb">
+                                <img src="assets/img/destination/new/02.jpg" alt="img">
+                                <div class="content">
+                                    <div class="title-text">
+                                        <h3><a href="destination-details.html">The Amazon</a></h3>
+                                        <p>Hotel 1</p>
+                                    </div>
+                                    <a href="destination-details.html" class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new-destination-items">
+                            <div class="thumb">
+                                <img src="assets/img/destination/new/03.jpg" alt="img">
+                                <div class="content">
+                                    <div class="title-text">
+                                        <h3><a href="destination-details.html">Angel Falls, Venezuela</a></h3>
+                                        <p>Hotel 1</p>
+                                    </div>
+                                    <a href="destination-details.html" class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new-destination-items">
+                            <div class="thumb">
+                                <img src="assets/img/destination/new/04.jpg" alt="img">
+                                <div class="content">
+                                    <div class="title-text">
+                                        <h3><a href="destination-details.html">The great wall of china</a></h3>
+                                        <p>Hotel 1</p>
+                                    </div>
+                                    <a href="destination-details.html" class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Choose-us-section Start -->
+<section class="choose-us-section section-padding bg-cover fix" style="background-image: url('assets/img/choose-us-bg-2.jpg');">
+    <div class="container">
+        <div class="choose-us-wrapper">
+            <div class="row g-4 align-items-center">
+                <div class="col-xl-7 col-lg-6">
+                    <div class="choose-us-content">
+                        <div class="section-title">
+                                    <span class="sub-title wow fadeInUp">
+                                        Why Choose Us
+                                    </span>
+                            <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
+                                Get The Best Travel Experience
+                            </h2>
+                        </div>
+                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                            There are many variations of passages of  available, but the majority have suffered alteration in <br> some form, by injected humour words which don't look even slightly believable
+                        </p>
+                        <div class="choose-us-area">
+                            <div class="line-shape">
+                                <img src="assets/img/line-shape2.png" alt="img">
+                            </div>
+                            <div class="choose-us-items wow fadeInUp wow" data-wow-delay=".3s">
+                                <h3 class="number">
+                                    01
+                                </h3>
+                                <div class="content">
+                                    <h4>
+                                        Find ans enjoy a Trip that fits Your Lifestyle with <br>
+                                        your Friends
+                                    </h4>
+                                    <p>
+                                        Globally productize flexible potentialities via high-payoff markets. Proactively <br> revolutionize parallel growth strategies.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="choose-us-items wow fadeInUp wow" data-wow-delay=".5s">
+                                <h3 class="number">
+                                    02
+                                </h3>
+                                <div class="content">
+                                    <h4>
+                                        Travel With More Confidence
+                                    </h4>
+                                    <p>
+                                        Globally productize flexible potentialities via high-payoff markets. Proactively <br> revolutionize parallel growth strategies.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="choose-us-items wow fadeInUp wow" data-wow-delay=".7s">
+                                <h3 class="number">
+                                    03
+                                </h3>
+                                <div class="content">
+                                    <h4>
+                                        See What you really Get form us
+                                    </h4>
+                                    <p>
+                                        Globally productize flexible potentialities via high-payoff markets. Proactively <br> revolutionize parallel growth strategies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                    <div class="choose-us-thumb">
+                        <img src="assets/img/choose-us-bg.png" alt="img" class="wow img-custom-anim-left">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- watch-video-section Start -->
+<section class="watch-video-section section-padding pb-0 fix">
+    <div class="bg-shape">
+        <img src="assets/img/map-bg.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title text-center">
+                    <span class="sub-title wow fadeInUp">
+                        Watch Our Story
+                    </span>
+            <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
+                Unforgettable Travel Experiences <br>
+                Get Your Guide
+            </h2>
+        </div>
+        <div class="video-wrapper">
+            <div class="watch-button">
+                <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Contact Us<i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                <a href="tour-details.html" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Book Now<i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+            </div>
+            <div class="video-image bg-cover" style="background-image: url(assets/img/video-bg.jpg);">
+                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
+                    <i class="fa-duotone fa-play"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured-tour-section Start -->
+<section class="featured-tour-section section-padding section-bg">
+    <div class="left-shape">
+        <img src="assets/img/feature/plane-shape.png" alt="img">
+    </div>
+    <div class="right-shape">
+        <img src="assets/img/feature/plane-shape.png" alt="img">
+    </div>
+    <div class="array-button">
+        <button class="array-prev"><img src="assets/img/offer/chervon-right.png" alt="img"></button>
+        <button class="array-next"><img src="assets/img/icon/39.svg" alt="img"></button>
+    </div>
+    <div class="container">
+        <div class="section-title">
+                    <span class="sub-title wow fadeInUp">
+                        Featured Tour
+                    </span>
+            <h2 class="wow fadeInUp wow" data-wow-delay=".5s">
+                unforgettable Travel Discoveries
+            </h2>
+        </div>
+        <p class="wow fadeInUp wow" data-wow-delay=".7s">
+            There are many variations of passages of  available, but the majority have suffered alteration in some <br> form, by injected humour words which don't look even slightly believable
+        </p>
+        <div class="swiper tour-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="feature-tour-items">
+                        <div class="feature-tour-image">
+                            <img src="assets/img/feature/01.jpg" alt="img">
+                            <ul class="location">
+                                <li>
+                                    <i class="fa-light fa-location-dot"></i>
+                                    Nederland
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feature-tour-content">
+                            <h4>
+                                <a href="tour-details.html">
+                                    Best Time Ever to Explore <br>
+                                    Molina's Nature
+                                </a>
+                            </h4>
+                            <h5>
+                                $49.00<span>/Per day</span>
+                            </h5>
+                            <a href="tour-details.html" class="icon">
+                                <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature-tour-items">
+                        <div class="feature-tour-image">
+                            <img src="assets/img/feature/02.jpg" alt="img">
+                            <ul class="location">
+                                <li>
+                                    <i class="fa-light fa-location-dot"></i>
+                                    Thailand
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feature-tour-content">
+                            <h4>
+                                <a href="tour-details.html">
+                                    Bathing and Kayaking at <br>
+                                    Nonrival Beach
+                                </a>
+                            </h4>
+                            <h5>
+                                $49.00<span>/Per day</span>
+                            </h5>
+                            <a href="tour-details.html" class="icon">
+                                <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature-tour-items">
+                        <div class="feature-tour-image">
+                            <img src="assets/img/feature/03.jpg" alt="img">
+                            <ul class="location">
+                                <li>
+                                    <i class="fa-light fa-location-dot"></i>
+                                    Austria
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feature-tour-content">
+                            <h4>
+                                <a href="tour-details.html">
+                                    5 Best Tips for an Amazing <br>
+                                    Molina Trip
+                                </a>
+                            </h4>
+                            <h5>
+                                $49.00<span>/Per day</span>
+                            </h5>
+                            <a href="tour-details.html" class="icon">
+                                <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature-tour-items">
+                        <div class="feature-tour-image">
+                            <img src="assets/img/feature/04.jpg" alt="img">
+                            <ul class="location">
+                                <li>
+                                    <i class="fa-light fa-location-dot"></i>
+                                    Slingerland
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feature-tour-content">
+                            <h4>
+                                <a href="tour-details.html">
+                                    Discover Beautiful Moliva: <br>
+                                    Nature's Paradise
+                                </a>
+                            </h4>
+                            <h5>
+                                $49.00<span>/Per day</span>
+                            </h5>
+                            <a href="tour-details.html" class="icon">
+                                <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cta-section-2-section Start -->
+<section class="cta-section-2 section-padding fix">
+    <div class="left-shape float-bob-x">
+        <img src="assets/img/tree-shape.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="cta-wrapper-2 bg-cover" style="background-image: url(assets/img/cta-color-bg.jpg);">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="cta-content">
+                        <div class="section-title">
+                                    <span class="sub-title text-white wow fadeInUp">
+                                        Special offer for you
+                                    </span>
+                            <h2 class="text-white wow fadeInUp wow" data-wow-delay=".3s">
+                                50% Offer For Online
+                                1stApp Booking
+                            </h2>
+                        </div>
+                        <p class="text-white wow fadeInUp wow" data-wow-delay=".5s">
+                            It is a long established fact that a reader will be distracted the readable content of a page when looking at layout.
+                        </p>
+                        <div class="app-image wow fadeInUp wow" data-wow-delay=".7s">
+                            <a href="contact.html">
+                                <img src="assets/img/apple-shape.png" alt="img">
+                            </a>
+                            <a href="contact.html">
+                                <img src="assets/img/google-shape.png" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cta-image">
+                        <img src="assets/img/Group-phone.png" alt="img">
+                        <div class="shape float-bob-y">
+                            <img src="assets/img/cta-shape.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer class="footer-section fix bg-cover" style="background-image: url(assets/img/footer/footer-bg.jpg);">
+    <div class="container">
+        <div class="footer-widget-wrapper-new">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-md-8 col-sm-6 wow fadeInUp wow" data-wow-delay=".2s">
+                    <div class="single-widget-items text-center">
+                        <div class="widget-head">
+                            <a href="index.html">
+                                <img src="assets/img/logo/white-logo.png" alt="img">
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <h3>Subscribe Newsletter</h3>
+                            <p>Get Our Latest Deals and Update</p>
+                            <div class="footer-input">
+                                <input type="email" id="email2" placeholder="Your email address">
+                                <button class="newsletter-btn theme-btn" type="submit">
+                                    Subscribe <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="social-icon d-flex align-items-center justify-content-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ps-lg-5 wow fadeInUp wow" data-wow-delay=".4s">
+                    <div class="single-widget-items">
+                        <div class="widget-head">
+                            <h4>Quick Links</h4>
+                        </div>
+                        <ul class="list-items">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tour-details.html">
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tour-details.html">
+                                    Tour
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 ps-lg-5 wow fadeInUp wow" data-wow-delay=".6s">
+                    <div class="single-widget-items">
+                        <div class="widget-head">
+                            <h4>Packages</h4>
+                        </div>
+                        <ul class="list-items">
+                            <li><a href="tour-details.html">Cox's Bazar</a></li>
+                            <li><a href="tour-details.html">Sajek Valley</a></li>
+                            <li><a href="tour-details.html">Sylhet</a></li>
+                            <li><a href="tour-details.html">Bandarban</a></li>
+                            <li><a href="tour-details.html">Sundarban</a></li>
+                            <li><a href="tour-details.html">Saint Martin's Island</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ps-xl-5 wow fadeInUp wow" data-wow-delay=".6s">
+                    <div class="single-widget-items">
+                        <div class="widget-head">
+                            <h4>Contact Us</h4>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-items">
+                                <div class="icon">
+                                    <i class="fa-regular fa-location-dot"></i>
+                                </div>
+                                <div class="content">
+                                    <h6>55/B, Noakhali Tower Level-13,<br>
+                                        Purana Paltan Dhaka-1000
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="contact-items">
+                                <div class="icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="content">
+                                    <h6>
+                                        <a href="mailto:relaxtravelbd2023@gmail.com">relaxtravelbd2023@gmail.com</a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="contact-items">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="content">
+                                    <h6>
+                                        <a href="tel:+8809613249910">+8809613249910</a> <br>
+                                        <a href="tel:+8801745782331">+8801745782331</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-wrapper">
+                <p class="wow fadeInUp" data-wow-delay=".3s">
+                    Copyright © <span>Relax Travel BD,</span> All Rights Reserved.
+                </p>
+                <ul class="bottom-list wow fadeInUp" data-wow-delay=".5s">
+                    <li>Terms and Condition</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--<< All JS Plugins >>-->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!--<< Viewport Js >>-->
+<script src="assets/js/viewport.jquery.js"></script>
+<!--<< Bootstrap Js >>-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--<< nice-selec Js >>-->
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<!--<< Waypoints Js >>-->
+<script src="assets/js/jquery.waypoints.js"></script>
+<!--<< Counterup Js >>-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--<< Swiper Slider Js >>-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<!--<< MeanMenu Js >>-->
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<!--<< Datepicker Js >>-->
+<script src="assets/js/bootstrap-datepicker.js"></script>
+<!--<< Magnific Popup Js >>-->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--<< Wow Animation Js >>-->
+<script src="assets/js/wow.min.js"></script>
+<!--<< Main.js >>-->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
